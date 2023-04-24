@@ -1,5 +1,11 @@
-package nl.codegorilla.security.authentication;
+package nl.codegorilla.security.authentication.services;
 
+import nl.codegorilla.security.authentication.dto.AuthenticationRequest;
+import nl.codegorilla.security.authentication.dto.AuthenticationResponse;
+import nl.codegorilla.security.authentication.dto.RegistrationRequest;
+import nl.codegorilla.security.authentication.models.ApplicationUser;
+import nl.codegorilla.security.authentication.models.Role;
+import nl.codegorilla.security.authentication.repositories.UserRepository;
 import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
 import org.springframework.security.authentication.AuthenticationManager;

@@ -1,15 +1,16 @@
-package nl.codegorilla.security.authentication;
+package nl.codegorilla.security.authentication.services;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
 import java.security.Key;
-import java.time.temporal.ChronoUnit;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -17,6 +18,9 @@ import java.util.function.Function;
 
 @Service
 public class JwtService {
+
+
+    Logger logger = LoggerFactory.getLogger(JwtService.class);
 
     private static final String SECRET_KEY = "357638792F423F4528482B4D6251655368566D597133743677397A2443264629";
     public String extractUsername(String token) {

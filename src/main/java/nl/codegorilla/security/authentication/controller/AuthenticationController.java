@@ -1,6 +1,10 @@
-package nl.codegorilla.security.authentication;
+package nl.codegorilla.security.authentication.controller;
 
 
+import nl.codegorilla.security.authentication.dto.AuthenticationRequest;
+import nl.codegorilla.security.authentication.dto.AuthenticationResponse;
+import nl.codegorilla.security.authentication.services.AuthenticationService;
+import nl.codegorilla.security.authentication.dto.RegistrationRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

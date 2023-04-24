@@ -1,4 +1,4 @@
-package nl.codegorilla.security.authentication;
+package nl.codegorilla.security.authentication.dto;
 
 
 import lombok.Builder;

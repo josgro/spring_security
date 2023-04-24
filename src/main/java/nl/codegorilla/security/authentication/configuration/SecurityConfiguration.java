@@ -1,4 +1,4 @@
-package nl.codegorilla.security.configuration;
+package nl.codegorilla.security.authentication.configuration;
 
 import nl.codegorilla.security.authentication.JwtAuthenticationFilter;
 import org.springframework.context.annotation.Bean;

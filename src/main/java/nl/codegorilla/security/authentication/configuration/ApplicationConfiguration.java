@@ -1,6 +1,6 @@
-package nl.codegorilla.security.configuration;
+package nl.codegorilla.security.authentication.configuration;
 
-import nl.codegorilla.security.authentication.UserRepository;
+import nl.codegorilla.security.authentication.repositories.UserRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
